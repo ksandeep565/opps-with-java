@@ -1,0 +1,39 @@
+// Step 1: Define interface
+interface Animal {
+    int LEGS = 4;  // variable (constant)
+    void sound();  // abstract method
+}
+
+// Step 2: Extend interface
+interface Pet extends Animal {
+    void play();
+}
+
+// Step 3: Implement interface
+class Dog implements Pet {
+
+    // implementing sound()
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+
+    // implementing play()
+    public void play() {
+        System.out.println("Dog plays with ball");
+    }
+}
+
+// Step 4: Applying interface
+public class Main {
+    public static void main(String[] args) {
+
+        // interface reference
+        Pet myPet = new Dog();
+
+        myPet.sound();   // calling method
+        myPet.play();
+
+        // accessing interface variable
+        System.out.println("Number of legs: " + Animal.LEGS);
+    }
+}
