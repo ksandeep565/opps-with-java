@@ -1,0 +1,34 @@
+// this keyword example
+
+import java.util.Scanner;
+
+class ThisKeyword {
+
+    int number;
+
+    // Constructor
+    ThisKeyword(int number) {
+        this.number = number;
+    }
+
+    // Method to display value
+    void display() {
+        System.out.println("Value: " + number);
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter any number:");
+        int num = scan.nextInt();
+
+        // Creating object
+        ThisKeyword obj = new ThisKeyword(num);
+
+        // Calling method
+        obj.display();
+
+        scan.close();
+    }
+}
