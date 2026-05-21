@@ -1,0 +1,17 @@
+import javax.swing.*;   
+public class TextAreaExample   
+{   
+TextAreaExample() 
+{   
+JFrame newJFrame();
+f=     
+JTextArea area=new JTextArea("Welcome javatpoint");
+f.add(area);   
+f.setSize(300,300);   
+f.setVisible(true);   
+}
+    public static void main(String args[])   
+{
+newTextAreaExample();   
+}
+} 
